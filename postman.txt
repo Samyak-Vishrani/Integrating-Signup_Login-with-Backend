@@ -1,0 +1,50 @@
+{
+    "username": "Samyak Samyak",
+    "fullName": "Test",
+    "email": "testsamyak@gmail.com",
+    "password": "TestSamyak@123",
+    "phone": "9898989898",
+    "dob": "2000-01-02"
+}
+
+REGISTER:
+
+{
+    "statusCode": 200,
+    "data": {
+        "_id": "6705394c0845017acbe7b9c6",
+        "username": "samyak samyak",
+        "email": "testsamyak@gmail.com",
+        "fullName": "Test",
+        "phone": "9898989898",
+        "dob": "2000-01-02T00:00:00.000Z",
+        "createdAt": "2024-10-08T13:53:16.234Z",
+        "updatedAt": "2024-10-08T13:53:16.234Z",
+        "__v": 0
+    },
+    "message": "User Registration Successful",
+    "success": true
+}
+
+LOGIN:
+
+{
+    "statusCode": 200,
+    "data": {
+        "user": {
+            "_id": "6705394c0845017acbe7b9c6",
+            "username": "samyak samyak",
+            "email": "testsamyak@gmail.com",
+            "fullName": "Test",
+            "phone": "9898989898",
+            "dob": "2000-01-02T00:00:00.000Z",
+            "createdAt": "2024-10-08T13:53:16.234Z",
+            "updatedAt": "2024-10-08T13:55:32.674Z",
+            "__v": 0
+        },
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzA1Mzk0YzA4NDUwMTdhY2JlN2I5YzYiLCJlbWFpbCI6InRlc3RzYW15YWtAZ21haWwuY29tIiwidXNlcm5hbWUiOiJzYW15YWsgc2FteWFrIiwiZnVsbE5hbWUiOiJUZXN0IiwiaWF0IjoxNzI4Mzk1NzMyLCJleHAiOjE3Mjg0ODIxMzJ9.oGRwxyd8HSE-PVyVkLQzM9Fg_ngioIrW2ymYnEeLbtc",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzA1Mzk0YzA4NDUwMTdhY2JlN2I5YzYiLCJpYXQiOjE3MjgzOTU3MzIsImV4cCI6MTcyOTI1OTczMn0.SRwHfPMN3KHHzFxN1SDtgYGS9RJwoyqYF2hWg5r1j9I"
+    },
+    "message": "User Login Successful",
+    "success": true
+}

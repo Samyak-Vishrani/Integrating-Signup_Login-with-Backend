@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Poppins;
+  position: relative;
+}
+
+.navbar {
+  background-color: #000000;
+  padding: 15px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-button {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 18px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.sign-in {
+  background-color: rgba(55, 95, 53, 0.7);
+  border: none;
+}
+
+.sign-up {
+  background-color: rgba(62, 213, 51, 0.7);
+  border: none;
+  margin-right: 100px;
+}
+
+.toggle-theme {
+  border: none;
+}
+
+.nav-button:hover {
+  transform: scale(1.05);
+}
+
+.sign-in:hover {
+  background-color: rgba(55, 95, 53, 1);
+}
+
+.sign-up:hover {
+  background-color: rgba(62, 213, 51, 1);
+}
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  translate: -50% 6%;
+}
+
+label {
+  position: absolute;
+  left: -99999px;
+}
+
+input {
+  height: 4.6vh;
+  border-radius: 4px;
+  border-style: solid;
+  margin: 8.5px;
+  padding: 10px;
+  font-size: 16px;
+  display: block;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.main-div {
+  position: relative;
+  width: 400px;
+  background: transparent;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 2px;
+  border-style: solid;
+}
+
+
+main {
+  height: 100vh;
+  background-size: cover;
+}
+
+h1 {
+  margin-top: 30px;
+}
+
+.input-box {
+  width: 310px;
+  position: relative;
+  border: none;
+}
+
+/* .input-box label {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in;
+  transition: 0.5s;
+} */
+
+/* .input-box input:focus~label,
+.input-box input:valid~label {
+  top: -15px;
+} */
+
+/* input:focus + label {
+  transform: translateY(-20px);
+  top: -20px;
+  pointer-events: none;
+} */
+
+/* .input-box input:focus + label,
+.input-box input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #007bff; 
+} */
+
+.input-box input {
+  width: 90%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 0px;
+  bottom: 16px;
+  height: 25px;
+}
+
+.submit {
+  width: 100%;
+  height: 40px;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.linking {
+  margin-bottom: 20px;
+}
+
+.linking p {
+  display: inline;
+  color: rgb(41, 197, 29);
+  margin-right: 7px;
+  margin-left: 16px;
+}
+
+.link {
+  margin-left: 7px;
+  color: rgb(147, 232, 141)
+}
+
+
+/* MAIN PAGE */
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  translate: -50% 6%;
+
+}
+
+/* .info div {
+  padding: 10px;
+  border-color: #000000;
+  border-width: 2px;
+} */
+
+.showInfo {
+  width: 100%;
+  height: 40px;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  cursor: pointer;
+  padding: 12px 17px 12px 17px;
+}
+
+.userData {
+  margin: 16px;
+}
+
+.all-info {
+  border-color: black;
+  border-top-width: 10px;
+  padding: 8px;
+}
+
+
+/* White and black Themes */
+
+.white #dob,
+.white input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.white .linking p,
+.white .link,
+.white h1,
+.white input,
+.white .userData {
+  color: rgb(0, 0, 0);
+}
+
+.white .toggle-theme {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.white .main-div {
+  border-color: rgba(0, 0, 0, 0.6);
+}
+
+.white .input-box input {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.white .submit,
+.white .showInfo {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.white {
+  background-color: rgb(255, 255, 255);
+}
+
+
+.black input::placeholder,
+.black #dob {
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.black .linking p,
+.black .link,
+.black h1,
+.black input,
+.black .userData {
+  color: rgb(255, 255, 255);
+}
+
+.black input {
+  color: rgb(255, 255, 255);
+}
+
+.black .toggle-theme {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0)
+}
+
+.black .main-div {
+  border-color: rgb(255, 255, 255);
+}
+
+.black .input-box input {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.black .submit,
+.black .showInfo {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.black {
+  background-color: #000000;
+  height: 150vh;
+}
