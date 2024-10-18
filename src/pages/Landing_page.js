@@ -4,9 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from "framer-motion";
 
 
-const Landing_page = () => {
-
-    const [theme, setTheme] = useState('black');
+const Landing_page = ({theme, setTheme}) => {
 
     const toggleTheme = () => {
         setTheme((prevTheme) => (prevTheme === 'black' ? 'white' : 'black'));

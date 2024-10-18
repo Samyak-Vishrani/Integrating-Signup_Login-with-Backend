@@ -8,17 +8,15 @@ import axios from '../api/axios';
 import Cookies from "js-cookie";
 
 
-const SignIn = () => {
+const SignIn = ({theme, setTheme}) => {
 
     const navigate = useNavigate();
-
-    const loginUrl = "/login";
-
-    const [theme, setTheme] = useState('black');
 
     const toggleTheme = () => {
         setTheme((prevTheme) => (prevTheme === 'black' ? 'white' : 'black'));
     };
+
+    const loginUrl = "/login";
 
 
     const [enteredData, setEnteredData] = useState({

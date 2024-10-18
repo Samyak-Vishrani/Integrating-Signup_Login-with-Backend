@@ -6,11 +6,10 @@ import axios from '../api/axios';
 
 
 
-const MainPage = () => {
+const MainPage = ({theme, setTheme}) => {
 
     const navigate = useNavigate();
 
-    const [theme, setTheme] = useState('black');
     const toggleTheme = () => {
         setTheme((prevTheme) => (prevTheme === 'black' ? 'white' : 'black'));
     };
@@ -92,6 +91,14 @@ const MainPage = () => {
     }
 
 
+    const handlechangePass = () => {
+        navigate('/changepassword');
+    }
+
+    const handleUpdate = () => {
+        navigate('/update');
+    }
+
     return (
         <main
             className={theme}
@@ -100,6 +107,8 @@ const MainPage = () => {
                 <div className="nav-container">
                     <button onClick={toggleTheme} className="nav-button toggle-theme">Toggle Theme</button>
                     <button onClick={handleLogout} className="nav-button sign-in" >Logout</button>
+                    <button onClick={handlechangePass} className="nav-button sign-in" >Change Password</button>
+                    <button onClick={handleUpdate} className="nav-button sign-in" >Update Details</button>
                 </div>
             </nav>
 

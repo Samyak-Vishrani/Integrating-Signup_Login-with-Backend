@@ -10,13 +10,11 @@ import axios from '../api/axios';
 
 
 
-const SignUp = () => {
+const SignUp = ({theme, setTheme}) => {
     const navigate = useNavigate();
 
     const newErrors = {};
     const signupUrl = "/register";
-
-    const [theme, setTheme] = useState('black');
 
     const [errors, setErrors] = useState('');
 
